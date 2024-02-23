@@ -44,6 +44,28 @@ jobs:
           curl https://github.com/RuneLundberg/LoopKit/commit/43dd71a061e25886ef2087c2a04c72d10a668793.patch | git apply -v --directory=LoopKit
 
           # Submodule xxxxx patches: Follow prototype above
+          # Customize Loop: Download and apply patches
+          
+      - name: Customize Loop
+        run: | 
+
+          # The lines below add the customizations listed using the CustomizationSelect script
+          # The "\" is a continuation character 
+          #   the line following a "\" cannot be blank - that causes the Action to never complete
+          /bin/bash -c "$(curl -fsSL \
+          https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
+          omnipod_cage \
+          dexcom_sage \
+          dexcom_upload_readings \
+          future_carbs_4h \
+          now_line \
+          lnl_icon \
+          2002 \
+          algorithm_experiments \
+          testflight_expiration_warning
+
+          # the final customization listed above CANNOT have a continuation character "\"
+          # more customizations can be pasted after this line
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
