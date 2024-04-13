@@ -43,9 +43,6 @@ jobs:
           # LoopKit: RuneLundberg-patch-1: Tilpasning Lyumjev-verdier
           curl https://github.com/RuneLundberg/LoopKit/commit/43dd71a061e25886ef2087c2a04c72d10a668793.patch | git apply -v --directory=LoopKit
           
-          #LoopKit: RuneLundberg-patch-3: Endring av sikkerhetsgrense
-          curl https://github.com/RuneLundberg/LoopKit/commit/ba16e67a0218d555c4f8de45ef97992a1dc31591.patch | git apply -v --directory=LoopKit
-
           # Submodule xxxxx patches: Follow prototype above
           # Customize Loop: Download and apply patches
           
