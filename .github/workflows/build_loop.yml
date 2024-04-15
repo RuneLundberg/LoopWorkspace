@@ -39,9 +39,6 @@ jobs:
           #Loop: RuneLundberg-patch-1: Tilpasning av standard karbotider
           curl https://github.com/RuneLundberg/Loop/commit/6a97e9771a16abd5c7b9963362ef7824021e1217.patch | git apply -v --directory=Loop
 
-          #Loop: RuneLundberg-patch-2: Endring av BS-grense for maks GBPA (145mg/dL)
-          curl https://github.com/RuneLundberg/Loop/commit/7e906316898921040bd5c0722e0d2ed41474c2f0.patch | git apply -v --directory=Loop
-
           # Submodule LoopKit patches:
           # LoopKit: RuneLundberg-patch-1: Tilpasning Lyumjev-verdier
           curl https://github.com/RuneLundberg/LoopKit/commit/43dd71a061e25886ef2087c2a04c72d10a668793.patch | git apply -v --directory=LoopKit
@@ -69,6 +66,9 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
+
+          #Loop: RuneLundberg-patch-2: Endring av BS-grense for maks GBPA (145mg/dL)
+          curl https://github.com/RuneLundberg/Loop/commit/7e906316898921040bd5c0722e0d2ed41474c2f0.patch | git apply -v --directory=Loop
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
