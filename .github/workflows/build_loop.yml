@@ -40,8 +40,8 @@ jobs:
           curl https://github.com/RuneLundberg/Loop/commit/6a97e9771a16abd5c7b9963362ef7824021e1217.patch | git apply -v --directory=Loop
 
           # Submodule LoopKit patches:
-          # LoopKit: RuneLundberg-patch-1: Tilpasning Lyumjev-verdier
-          curl https://github.com/RuneLundberg/LoopKit/commit/43dd71a061e25886ef2087c2a04c72d10a668793.patch | git apply -v --directory=LoopKit
+          #LoopKit: RuneLundberg-patch-4 : Tilpasning Lyumjev-verdier
+          curl https://github.com/RuneLundberg/LoopKit/commit/b329c92dac03043bb7b11ba859edc80dc778547b.patch | git apply -v --directory=LoopKit
           
           # Submodule xxxxx patches: Follow prototype above
           # Customize Loop: Download and apply patches
