@@ -67,8 +67,8 @@ jobs:
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
 
-          #Loop: RuneLundberg-patch-2: Endring av BS-grense for maks GBPA (145mg/dL)
-          curl https://github.com/RuneLundberg/Loop/commit/7e906316898921040bd5c0722e0d2ed41474c2f0.patch | git apply -v --directory=Loop
+          #Loop: RuneLundberg-patch-3: Endring av BS-grense for maks GBPA (180mg/dL)
+          curl https://github.com/RuneLundberg/Loop/commit/b9b374f0211612562907db9efe58fd4f8b6f4104.patch | git apply -v --directory=Loop
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
