@@ -67,6 +67,9 @@ jobs:
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
 
+      - name: Customize Loop
+        run: |
+        
           #Loop: RuneLundberg-patch-2: Endring av BS-grense for maks GBPA (153mg/dL)
           curl https://github.com/RuneLundberg/Loop/commit/679369e672079dcb04b19a6e724b236126fa64ca.patch | git apply -v --directory=Loop
           
