@@ -67,6 +67,7 @@ jobs:
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
 
+      # Customize Loop: Download and apply patches
       - name: Customize Loop
         run: |
         
