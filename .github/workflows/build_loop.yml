@@ -229,16 +229,14 @@ jobs:
           git apply ./patches/* --allow-empty -v --whitespace=fix
           fi
 
-          # Submodule Loop patches:
+          # Loop: RuneLundberg-patch-3: Endring av karbotider - dev branch
           # Template for customizing submodule Loop (changes Loop app name to "CustomLoop")
           # Remove the "#" sign from the beginning of the line below to activate:
-          # Loop: RuneLundberg-patch-3: Endring av karbotider - dev branch
           curl https://github.com/RuneLundberg/Loop/commit/4d435c880f95ffee9bd3113291c766aa922404cd.patch | git apply -v --directory=Loop -v --whitespace=fix
           
-          # Submodule LoopKit patches:
+          # Loopkit: RuneLundberg-patch-6: Endring av Lyumjev verdier - dev branch
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
-          # Loopkit: RuneLundberg-patch-6: Endring av Lyumjev verdier - dev branch
           curl https://github.com/RuneLundberg/Loopkit/commit/d50ce8ffe2bbd0ac0517da0e745928190ca987d4.patch | git apply -v --directory=Loopkit -v --whitespace=fix
           
           # Submodule xxxxx patches:
