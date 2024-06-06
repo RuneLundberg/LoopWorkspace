@@ -238,7 +238,8 @@ jobs:
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
-          #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
+          # Loopkit: RuneLundberg-patch-6: Endring av Lyumjev verdier - dev branch
+          curl https://github.com/RuneLundberg/Loopkit/commit/d50ce8ffe2bbd0ac0517da0e745928190ca987d4.patch | git apply -v --directory=Loopkit -v --whitespace=fix
           
           # Submodule xxxxx patches:
 
