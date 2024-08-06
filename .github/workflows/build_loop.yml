@@ -254,7 +254,7 @@ jobs:
       - name: Customize Loop
         run: |
 
-      # The lines below add the customizations listed using the CustomizationSelect script
+# The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
           #   the line following a "\" should not be blank
           /bin/bash -c "$(curl -fsSL \
@@ -265,12 +265,9 @@ jobs:
           override_sens \
           now_line \
           lnl_icon \
-          watch_title \
-          2hlollipop \
           meal_week \
           2002 \
-          basal_lock \
-          live_activity
+          basal_lock 
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
