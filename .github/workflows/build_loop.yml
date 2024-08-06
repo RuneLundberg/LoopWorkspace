@@ -282,10 +282,16 @@ jobs:
           # Remove the "#" sign from the beginning of the line below to activate:
           #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
 
+          #Loop: RuneLundberg-patch-4: Endring av karbotider ver 3.4.1
+          curl https://github.com/RuneLundberg/Loop/commit/00ce5f19fde52aa061dea49824a0ac7271d64a0f.patch | git apply -v --directory=Loop -v --whitespace=fix
+
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
+
+          #LoopKit: RuneLundberg-patch-8 : Endring av Lyumjev-verdier ver 3.4.1
+          curl https://github.com/RuneLundberg/LoopKit/commit/e7cb7c8218b124543c931b9dcc10f0e896310a2d.patch | git apply -v --directory=LoopKit -v --whitespace=fix
 
           # Submodule xxxxx patches:
 
