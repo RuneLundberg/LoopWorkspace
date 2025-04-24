@@ -293,8 +293,8 @@ jobs:
           #Loop: RuneLundberg-patch-4: Endring av karbotider ver 3.4.1
           curl https://github.com/RuneLundberg/Loop/commit/00ce5f19fde52aa061dea49824a0ac7271d64a0f.patch | git apply -v --directory=Loop -v --whitespace=fix
 
-          #Loop: RuneLundberg-patch-5: Endring av BS-grense for maks GBPA (162gm/dL)
-          curl https://github.com/RuneLundberg/Loop/commit/96f5e79ac18b8841ea1a6db02ff8b333c9fa63e7.patch | git apply -v --directory=Loop -v --whitespace=fix
+          #Loop: RuneLundberg-patch-6: Endring av BS-grense for maks GBPA (144mg/dL)
+          curl https://github.com/RuneLundberg/Loop/commit/ac60fff32c41a961bec04ef9e1a9ceb13c8aacf8.patch | git apply -v --directory=Loop -v --whitespace=fix
 
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
